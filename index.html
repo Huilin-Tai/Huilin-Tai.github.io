@@ -265,10 +265,10 @@
             * */
 			var faculties=new Array('Mathematics','Statistics','Computer Science','Interdisciplinary');
 			var professors=new Array();
-			professors['Mathematics']=['Advanced Applied Linear Algebra','Probability','Algebra1&2','Analysis1&2','Numerical Analysis','Discrete Mathematics','Generalized Linear Models'];
-			professors['Statistics']=['Statistics','Statistical Computing','Fundimentals of Statistical Learning','Nonparametric Statistics','Time Series Analysis','Stochastic Processes '];
-			professors['Computer Science']=['Algorithm and Data Structures', 'Software Systems', 'Computer Systems', 'Programming Language and Paradigms','Operating Systems', 'Theory of Computation', 'Compiler Design','Algorithm Design' ];
-			professors['Interdisciplinary']=['Computational Biology Methods','Applied Machine Learning','Theory of Interest','Artificial Intelligence' ,'Organizational Behavior','Managerial Economics'];
+			professors['Mathematics']=['Advanced Applied Linear Algebra','Probability','Algebra1&2','Analysis1&2','Numerical Analysis','Discrete Mathematics*','Generalized Linear Models'];
+			professors['Statistics']=['Statistics','Statistical Computing','Fundimentals of Statistical Learning','Nonparametric Statistics','Time Series Analysis*','Stochastic Processes*'];
+			professors['Computer Science']=['Algorithm and Data Structures', 'Software Systems*', 'Computer Systems', 'Programming Language and Paradigms','Operating Systems', 'Theory of Computation', 'Compiler Design','Algorithm Design' ];
+			professors['Interdisciplinary']=['Computational Biology Methods','Applied Machine Learning*','Theory of Interest','Artificial Intelligence*' ,'Organizational Behavior','Managerial Economics'];
 			function initProvince(){
 				var province=document.getElementById("province");
 				for (var i=0;i<faculties.length;i++) {
@@ -296,7 +296,7 @@
 				fillCity();
 			}
 		</script>
-		<h2 style="font-size:18px">Relevant Courseswork <br />
+		<h2 style="font-size:18px">Relevant Courseswork(* means in progress) <br />
 		Field：<select id="province" onchange="fillCity()"></select>
 		Topics：<select id="city"></select>
 		</h2>
